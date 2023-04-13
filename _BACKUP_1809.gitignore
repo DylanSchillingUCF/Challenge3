@@ -1,4 +1,5 @@
-
+<<<<<<< HEAD
+<<<<<<< HEAD
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
@@ -13,7 +14,9 @@
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
-
+=======
+=======
+>>>>>>> 429ce3ce511f06d2bbbabe1e4046bb7a97521fab
 # This .gitignore is designed for projects in their own folders
 #
 **/[Ll]ibrary/
@@ -26,6 +29,10 @@
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !**/[Aa]ssets/**/*.meta
+<<<<<<< HEAD
+>>>>>>> 429ce3ce511f06d2bbbabe1e4046bb7a97521fab
+=======
+>>>>>>> 429ce3ce511f06d2bbbabe1e4046bb7a97521fab
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
@@ -34,6 +41,8 @@
 [Aa]ssets/Plugins/Editor/JetBrains*
 
 # Visual Studio cache directory
+<<<<<<< HEAD
+<<<<<<< HEAD
 .vs/
 
 # Gradle cache directory
@@ -119,7 +128,9 @@ Assets/Audio/Quest Complete.wav
 Assets/Audio/Robot Fixed.wav
 Assets/Audio/Robot Walking_Broken.wav
 Assets/Audio/Throw Cog.wav
-
+=======
+=======
+>>>>>>> 429ce3ce511f06d2bbbabe1e4046bb7a97521fab
 **/.vs/
 
 # Gradle cache directory
@@ -157,3 +168,7 @@ Assets/Audio/Throw Cog.wav
 
 # Crashlytics generated file
 **/crashlytics-build.properties
+<<<<<<< HEAD
+>>>>>>> 429ce3ce511f06d2bbbabe1e4046bb7a97521fab
+=======
+>>>>>>> 429ce3ce511f06d2bbbabe1e4046bb7a97521fab
