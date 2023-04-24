@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEnginge.SceneManagement;
 
 public class SmugNPCController : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class SmugNPCController : MonoBehaviour
     float timerDisplay;
     bool levelCompleted = false;
     bool broken = true;
-    Rigidbody2D rigidbody2D;
+    Animator animator;
 
     public Scene currentscene;
 
@@ -22,6 +23,7 @@ public class SmugNPCController : MonoBehaviour
         levelCompleteDialogBox.SetActive(false);
         timerDisplay = -1.0f;
         currentscene = SceneManager.GetActiveScene();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
