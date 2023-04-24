@@ -122,6 +122,7 @@ public class RubyController : MonoBehaviour
             if (hit.collider != null)
             {
                 NonPlayerCharacter character = hit.collider.GetComponent<NonPlayerCharacter>();
+                SmugNPCController smug = hit.collider.GetComponent<SmugNPCController>();
                 if ((character != null) && !levelComplete)
                 {
                     character.DisplayDialog();
