@@ -27,8 +27,27 @@ public class SmugNPCController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (timerDisplay >= 0)
+        {
+            timerDisplay -= Time.deltaTime;
+            if (timerDisplay < 0)
+            {
+                dialogBox.SetActive(false);
+                levelCompleteDialogBox.SetActive(false);
+                if (levelCompleted)
+                {
+                    SceneManager.LoadScene("main3");
+                }
+            }
+        }
     }
+
+    public void DisplayDialog()
+    {
+        timerDisplay = displayTime;
+        dialogBox.SetActive(true);
+    }
+
 
     public void Fix()
     {
