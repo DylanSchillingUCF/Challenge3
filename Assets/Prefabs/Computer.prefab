@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 2212273817555079115}
   - component: {fileID: 2212273817555079114}
   - component: {fileID: 2212273817555079113}
-  m_Layer: 0
+  - component: {fileID: 1570612017}
+  m_Layer: 11
   m_Name: Computer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,6 +134,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7548275, y: 0.89552116}
   m_EdgeRadius: 0
+--- !u!114 &1570612017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2212273817555079112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4320953aca2a7fb4b94e362cbbd6215f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayTime: 4
+  dialogBox: {fileID: 0}
+  levelCompleteDialogBox: {fileID: 0}
+  blockerbox1: {fileID: 0}
+  blockerbox2: {fileID: 0}
+  smokeEffect: {fileID: 1229849349219098270}
 --- !u!1001 &2212273816899581822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -200,8 +219,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmokeEffect
       objectReference: {fileID: 0}
+    - target: {fileID: 4048016200525636560, guid: 90d3f0a0acf446b4b88e20093207d0b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90d3f0a0acf446b4b88e20093207d0b9, type: 3}
+--- !u!198 &1229849349219098270 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1126707116573288928, guid: 90d3f0a0acf446b4b88e20093207d0b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2212273816899581822}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3812952055914704035 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3051682298817043421, guid: 90d3f0a0acf446b4b88e20093207d0b9,
