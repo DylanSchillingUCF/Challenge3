@@ -11,7 +11,6 @@ public class SmugNPCController : MonoBehaviour
     public GameObject blockerbox2;
     public ParticleSystem smokeEffect;
     float timerDisplay;
-    bool broken = true;
     Animator animator;
 
     // Start is called before the first frame update
@@ -50,7 +49,6 @@ public class SmugNPCController : MonoBehaviour
 
     public void Fix()
     {
-        broken = false;
         //optional if you added the fixed animation
         //animator.SetTrigger("Fixed");
         blockerbox1.SetActive(false);
