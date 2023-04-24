@@ -35,6 +35,7 @@ public class Projectile : MonoBehaviour
     {
         HardEnemyController ehard = other.collider.GetComponent<HardEnemyController>();
         EnemyController e = other.collider.GetComponent<EnemyController>();
+        
         if (ehard != null)
         {
             ehard.Fix();
