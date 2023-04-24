@@ -9,6 +9,7 @@ public class SmugNPCController : MonoBehaviour
     public GameObject levelCompleteDialogBox;
     float timerDisplay;
     bool levelCompleted = false;
+    bool computerRepaired = false;
 
     public Scene currentscene;
 
