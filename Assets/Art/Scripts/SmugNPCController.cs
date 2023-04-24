@@ -49,7 +49,7 @@ public class SmugNPCController : MonoBehaviour
     {
         broken = false;
         //optional if you added the fixed animation
-        animator.SetTrigger("Fixed");
+        //animator.SetTrigger("Fixed");
         blockerbox1.SetActive(false);
         blockerbox2.SetActive(false);
         smokeEffect.Stop();
