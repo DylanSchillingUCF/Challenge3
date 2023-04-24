@@ -52,6 +52,7 @@ public class Projectile : MonoBehaviour
         else if (smug != null)
         {
             smug.Fix();
+            rubyScript.ComputerFixed();
         }
 
         Destroy(gameObject);
