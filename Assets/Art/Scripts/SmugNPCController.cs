@@ -7,9 +7,11 @@ public class SmugNPCController : MonoBehaviour
     public float displayTime = 4.0f;
     public GameObject dialogBox;
     public GameObject levelCompleteDialogBox;
+    public ParticleSystem smokeEffect;
     float timerDisplay;
     bool levelCompleted = false;
     bool broken = true;
+    Rigidbody2D rigidbody2D;
 
     public Scene currentscene;
 
