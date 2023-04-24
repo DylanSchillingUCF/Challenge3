@@ -132,9 +132,13 @@ public class RubyController : MonoBehaviour
                 {
                     character.DisplayLevelCompleteDialog();
                 }
-                if (smug != null)
+                if ((smug != null) && !computerFixed)
                 {
                     smug.DisplayDialog();
+                }
+                if ((smug != null) && computerFixed)
+                {
+                    smug.DisplayFixedDialog;
                 }
             }
         }

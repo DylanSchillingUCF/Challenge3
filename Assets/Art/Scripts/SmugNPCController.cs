@@ -6,7 +6,7 @@ public class SmugNPCController : MonoBehaviour
 {
     public float displayTime = 4.0f;
     public GameObject dialogBox;
-    public GameObject levelCompleteDialogBox;
+    public GameObject fixedDialogBox;
     public GameObject blockerbox1;
     public GameObject blockerbox2;
     public ParticleSystem smokeEffect;
@@ -43,7 +43,7 @@ public class SmugNPCController : MonoBehaviour
         timerDisplay = displayTime;
         dialogBox.SetActive(true);
     }
-    public void DisplayLevelCompleteDialog()
+    public void DisplayFixedDialog()
     {
         timerDisplay = displayTime;
         levelCompleteDialogBox.SetActive(true);
