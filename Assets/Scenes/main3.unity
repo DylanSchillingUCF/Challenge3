@@ -2153,6 +2153,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &652844330 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3835289073457255834, guid: 4180c798f78268647a1277c1a0696d92,
+    type: 3}
+  m_PrefabInstance: {fileID: 1816411040}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &698521240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12694,30 +12700,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &1570612012 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2212273817555079112, guid: fb73f0be85339b64e8278cb8446f5e06,
-    type: 3}
-  m_PrefabInstance: {fileID: 2212273816944061668}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1570612017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1570612012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4320953aca2a7fb4b94e362cbbd6215f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  displayTime: 4
-  dialogBox: {fileID: 0}
-  levelCompleteDialogBox: {fileID: 0}
-  blockerbox1: {fileID: 0}
-  blockerbox2: {fileID: 0}
-  smokeEffect: {fileID: 0}
 --- !u!1001 &1594605491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12925,6 +12907,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed63924568940f648b8ba36d07940785, type: 3}
+--- !u!1 &1668879401 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3835289073457255834, guid: 4180c798f78268647a1277c1a0696d92,
+    type: 3}
+  m_PrefabInstance: {fileID: 172066625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1816411040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13710,15 +13698,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1570612017, guid: fb73f0be85339b64e8278cb8446f5e06, type: 3}
+      propertyPath: blockerbox1
+      value: 
+      objectReference: {fileID: 1668879401}
+    - target: {fileID: 1570612017, guid: fb73f0be85339b64e8278cb8446f5e06, type: 3}
+      propertyPath: blockerbox2
+      value: 
+      objectReference: {fileID: 652844330}
     - target: {fileID: 2212273817555079112, guid: fb73f0be85339b64e8278cb8446f5e06,
         type: 3}
       propertyPath: m_Name
       value: Computer
-      objectReference: {fileID: 0}
-    - target: {fileID: 2212273817555079112, guid: fb73f0be85339b64e8278cb8446f5e06,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2212273817555079124, guid: fb73f0be85339b64e8278cb8446f5e06,
         type: 3}
@@ -13774,11 +13765,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2782910220109157550, guid: fb73f0be85339b64e8278cb8446f5e06,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb73f0be85339b64e8278cb8446f5e06, type: 3}
