@@ -8,6 +8,7 @@ public class SmugNPCController : MonoBehaviour
     public float displayTime = 4.0f;
     public GameObject dialogBox;
     public GameObject levelCompleteDialogBox;
+    public GameObject 
     public ParticleSystem smokeEffect;
     float timerDisplay;
     bool levelCompleted = false;
@@ -35,7 +36,6 @@ public class SmugNPCController : MonoBehaviour
     public void Fix()
     {
         broken = false;
-        rigidbody2D.simulated = false;
         //optional if you added the fixed animation
         animator.SetTrigger("Fixed");
 
