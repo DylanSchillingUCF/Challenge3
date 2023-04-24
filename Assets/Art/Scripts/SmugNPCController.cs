@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEnginge.SceneManagement;
 
 public class SmugNPCController : MonoBehaviour
 {
@@ -16,22 +15,19 @@ public class SmugNPCController : MonoBehaviour
     bool broken = true;
     Animator animator;
 
-    public Scene currentscene;
-
     // Start is called before the first frame update
     void Start()
     {
         dialogBox.SetActive(false);
         levelCompleteDialogBox.SetActive(false);
         timerDisplay = -1.0f;
-        currentscene = SceneManager.GetActiveScene();
         animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-         
+
     }
 
     public void Fix()
