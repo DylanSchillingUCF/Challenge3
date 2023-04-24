@@ -34,10 +34,6 @@ public class SmugNPCController : MonoBehaviour
             {
                 dialogBox.SetActive(false);
                 levelCompleteDialogBox.SetActive(false);
-                if (levelCompleted)
-                {
-                    SceneManager.LoadScene("main3");
-                }
             }
         }
     }
