@@ -43,7 +43,11 @@ public class SmugNPCController : MonoBehaviour
         timerDisplay = displayTime;
         dialogBox.SetActive(true);
     }
-
+    public void DisplayLevelCompleteDialog()
+    {
+        timerDisplay = displayTime;
+        levelCompleteDialogBox.SetActive(true);
+    }
 
     public void Fix()
     {
