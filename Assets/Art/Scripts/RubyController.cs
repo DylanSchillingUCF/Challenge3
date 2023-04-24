@@ -138,7 +138,7 @@ public class RubyController : MonoBehaviour
                 }
                 if ((smug != null) && computerFixed)
                 {
-                    smug.DisplayFixedDialog;
+                    smug.DisplayFixedDialog();
                 }
             }
         }
