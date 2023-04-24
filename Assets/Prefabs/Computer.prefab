@@ -365,7 +365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayTime: 4
   dialogBox: {fileID: 6274610384321500584}
-  levelCompleteDialogBox: {fileID: 5064910214019055597}
+  fixedDialogBox: {fileID: 5064910214019055597}
   blockerbox1: {fileID: 0}
   blockerbox2: {fileID: 0}
   smokeEffect: {fileID: 1229849349219098270}
