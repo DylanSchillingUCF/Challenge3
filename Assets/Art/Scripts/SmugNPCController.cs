@@ -15,4 +15,14 @@ public class SmugNPCController : MonoBehaviour
     {
          
     }
+    
+    public void Fix()
+    {
+        broken = false;
+        rigidbody2D.simulated = false;
+        //optional if you added the fixed animation
+        animator.SetTrigger("Fixed");
+
+        smokeEffect.Stop();
+    }
 }
