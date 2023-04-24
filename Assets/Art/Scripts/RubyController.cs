@@ -131,7 +131,10 @@ public class RubyController : MonoBehaviour
                 {
                     character.DisplayLevelCompleteDialog();
                 }
-                if (smug != null) &&
+                if (smug != null)
+                {
+                    smug.DisplayDialog();
+                }
             }
         }
         if (levelComplete || failed || gameComplete)
