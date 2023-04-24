@@ -37,7 +37,7 @@ public class RubyController : MonoBehaviour
     bool levelComplete;
     bool gameComplete;
     bool failed;
-    bool computerFixed = true;
+    bool computerFixed = false;
 
     public TMP_Text countText;
     public TMP_Text ammoText;
