@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ArmorController : MonoBehaviour
 {
-    public AudioClip armorCollectionClip;
+    public AudioClip collectedClip;
     public ParticleSystem armorEffect;
 
     void OnTriggerEnter2D(Collider2D other)
@@ -18,7 +18,7 @@ public class ArmorController : MonoBehaviour
                 controller.ActivateArmor();
                 Destroy(gameObject);
 
-                PlaySound
+                controller.PlaySound(collectedClip);
                 armorEffect.Play();
             }
         }
