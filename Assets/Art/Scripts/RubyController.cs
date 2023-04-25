@@ -28,6 +28,7 @@ public class RubyController : MonoBehaviour
 
     public bool armorActive = false;
     public float armorTime = 6.0f;
+    float armorTimeRemaining;
 
     Rigidbody2D rigidbody2d;
     float horizontal;
@@ -66,6 +67,8 @@ public class RubyController : MonoBehaviour
         levelComplete = false;
         gameComplete = false;
         failed = false;
+
+        armorTimeRemaining = -1.0;
 
         levelCompleteText.SetActive(false);
         victoryText.SetActive(false);
@@ -209,7 +212,7 @@ public class RubyController : MonoBehaviour
 
     public void ActivateArmor()
     {
-        
+
     }
 
     void Launch()
