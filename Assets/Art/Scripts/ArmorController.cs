@@ -12,12 +12,13 @@ public class ArmorController : MonoBehaviour
         RubyController controller = other.GetComponent<RubyController>();
 
         if (controller != null)
-        { }
-        controller.ActivateArmor();
-        Destroy(gameObject);
+        {
+            controller.ActivateArmor();
+            Destroy(gameObject);
 
-        controller.PlaySound(collectedClip);
-        armorEffect.Play();
+            controller.PlaySound(collectedClip);
+            armorEffect.Play();
+        }
     }
 
 }
