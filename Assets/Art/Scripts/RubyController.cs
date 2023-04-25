@@ -26,6 +26,9 @@ public class RubyController : MonoBehaviour
     bool isInvincible;
     float invincibleTimer;
 
+    public bool armorActive = false;
+    public float armorTime = 6.0f;
+
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
@@ -59,6 +62,7 @@ public class RubyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         levelComplete = false;
         gameComplete = false;
         failed = false;
@@ -181,8 +185,10 @@ public class RubyController : MonoBehaviour
             PlaySound(hitSound);
             hurtEffect.Play();
         }
-
+        if (armorActive){
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        }
+        else currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
 
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
 
