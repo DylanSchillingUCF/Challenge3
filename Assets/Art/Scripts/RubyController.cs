@@ -163,7 +163,8 @@ public class RubyController : MonoBehaviour
 
         if (armorTimeRemaining >= 0)
         {
-            armorTimeRemaining -= armorTime
+            armorTimeRemaining -= time.deltaTime;
+            
         }
     }
 
