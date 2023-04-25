@@ -48,6 +48,7 @@ public class RubyController : MonoBehaviour
     public GameObject victoryText;
     public GameObject failureText;
     public GameObject levelCompleteText;
+    public GameObject armorUIIndicator;
 
     public GameObject BGM;
     public GameObject VictoryTheme;
@@ -73,6 +74,7 @@ public class RubyController : MonoBehaviour
         levelCompleteText.SetActive(false);
         victoryText.SetActive(false);
         failureText.SetActive(false);
+        armorUIIndicator.SetActive(false);
 
         currentscene = SceneManager.GetActiveScene();
 
@@ -164,7 +166,7 @@ public class RubyController : MonoBehaviour
         if (armorTimeRemaining >= 0)
         {
             armorTimeRemaining -= time.deltaTime;
-            
+            if (armorTimeRemaining < 0)
         }
     }
 
