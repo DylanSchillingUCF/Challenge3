@@ -56,6 +56,6 @@ public class SmugNPCController : MonoBehaviour
         blockerbox1.SetActive(false);
         blockerbox2.SetActive(false);
         smokeEffect.Stop();
-        audiosource.PlayOneShot(computerfixsound);
+        PlaySound
     }
 }
