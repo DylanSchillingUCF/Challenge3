@@ -69,7 +69,7 @@ public class RubyController : MonoBehaviour
         gameComplete = false;
         failed = false;
 
-        armorTimeRemaining = -1.0;
+        armorTimeRemaining = -1.0f;
 
         levelCompleteText.SetActive(false);
         victoryText.SetActive(false);
