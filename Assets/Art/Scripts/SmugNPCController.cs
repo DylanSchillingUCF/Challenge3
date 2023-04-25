@@ -12,12 +12,12 @@ public class SmugNPCController : MonoBehaviour
     public ParticleSystem smokeEffect;
     float timerDisplay;
     Animator animator;
-    AudioSource computerfixsound;
+    AudioClip computerfixsound;
+    AudioSource audiosource;
 
     // Start is called before the first frame update
     void Start()
     {
-        AudioSource fixsound = GetComponent<AudioSource>();
         dialogBox.SetActive(false);
         fixedDialogBox.SetActive(false);
         timerDisplay = -1.0f;
@@ -56,6 +56,6 @@ public class SmugNPCController : MonoBehaviour
         blockerbox1.SetActive(false);
         blockerbox2.SetActive(false);
         smokeEffect.Stop();
-        computerfixsound.Play();
+        audiosource.PlayOneShot(computerfixsound);
     }
 }
