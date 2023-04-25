@@ -225,7 +225,7 @@ public class RubyController : MonoBehaviour
 
     public void ActivateArmor()
     {
-
+        
     }
 
     void Launch()

@@ -15,7 +15,7 @@ public class ArmorController : MonoBehaviour
         {
             if (controller.health < controller.maxHealth)
             {
-                controller.ChangeHealth(1);
+                controller.ActivateArmor();
                 Destroy(gameObject);
 
                 controller.PlaySound(collectedClip);
