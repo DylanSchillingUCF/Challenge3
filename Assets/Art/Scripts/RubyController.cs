@@ -29,7 +29,7 @@ public class RubyController : MonoBehaviour
     public bool armorActive = false;
     public float armorTime = 6.0f;
     float armorTimeRemaining;
-    float armorSpeed = 3.0f;
+    float armorSpeed = 2.5f;
     float originalSpeed;
 
     Rigidbody2D rigidbody2d;
