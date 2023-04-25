@@ -17,6 +17,7 @@ public class SmugNPCController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AudioSource fixsound = GetComponent<AudioSource>();
         dialogBox.SetActive(false);
         fixedDialogBox.SetActive(false);
         timerDisplay = -1.0f;
