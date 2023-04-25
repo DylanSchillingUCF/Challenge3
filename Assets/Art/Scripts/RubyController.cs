@@ -64,7 +64,7 @@ public class RubyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
         levelComplete = false;
         gameComplete = false;
         failed = false;
@@ -166,7 +166,7 @@ public class RubyController : MonoBehaviour
         //Code that tracks remaining time the armor powerup has. When it's over, sets it to inactive and kills the UI element.
         if (armorTimeRemaining >= 0)
         {
-            armorTimeRemaining -= time.deltaTime;
+            armorTimeRemaining -= Time.deltaTime;
             if (armorTimeRemaining < 0)
             {
                 armorUIIndicator.SetActive(false);
@@ -201,8 +201,9 @@ public class RubyController : MonoBehaviour
             PlaySound(hitSound);
             hurtEffect.Play();
         }
-        if (armorActive){
-        currentHealth = Mathf.Clamp(((currentHealth + amount) - 1), 0, maxHealth);
+        if (armorActive)
+        {
+            currentHealth = Mathf.Clamp(((currentHealth + amount) - 1), 0, maxHealth);
         }
         else currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
 
