@@ -160,6 +160,11 @@ public class RubyController : MonoBehaviour
         {
             victoryText.SetActive(true);
         }
+
+        if (armorTimeRemaining >= 0)
+        {
+            armorTimeRemaining -= armorTime
+        }
     }
 
     void FixedUpdate()
