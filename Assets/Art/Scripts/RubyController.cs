@@ -225,7 +225,8 @@ public class RubyController : MonoBehaviour
 
     public void ActivateArmor()
     {
-        
+        armorTimeRemaining = armorTime;
+        armorUIIndicator.SetActive(true);
     }
 
     void Launch()
