@@ -163,10 +163,15 @@ public class RubyController : MonoBehaviour
             victoryText.SetActive(true);
         }
 
+        //Code that tracks remaining time the armor powerup has. When it's over, sets it to inactive and kills the UI element.
         if (armorTimeRemaining >= 0)
         {
             armorTimeRemaining -= time.deltaTime;
             if (armorTimeRemaining < 0)
+            {
+                armorUIIndicator.SetActive(false);
+                armorActive = false;
+            }
         }
     }
 
